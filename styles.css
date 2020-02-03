@@ -259,6 +259,7 @@ details summary:hover .closed .bar:nth-of-type(3){
       transition: all 0.4s ease;
 }
 .bar:first-of-type{
+	margin-top: 20px;
     width: 30px;
 }
 .bar:nth-of-type(2){
