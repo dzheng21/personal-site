@@ -102,21 +102,53 @@ a{
     color: #fff;
     text-decoration: none;
 }
-.logo{
-    width: 90px;
+/*.logo{
+    width: 110px;
     height: 65px;
     border: 0;
     border-bottom: 2px solid;
-    border-top: 2px solid;
+    border-top: 4px solid;
     padding: 5px;
     vertical-align: middle;
     line-height: 1;
-    padding: 5px 5px 0 0;
+    padding: 3px 5px 5px 0;
     font-weight: 600;
     font-size: 25px;
     letter-spacing: -2px;
     z-index: 1;
-    color: black;
+}*/
+.logo{
+    width: 105px;
+    height: 70px;
+    border: 0;
+    border-bottom: 5px solid;
+    border-top: 5px solid;
+    padding: 10px;
+    padding-top: 15px;
+    vertical-align: middle;
+    text-align: middle;
+    line-height: 1;
+    padding: 3px 5px 5px 0;
+    font-weight: 600;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-size: 60px;
+    letter-spacing: -9px;
+    z-index: 1;
+    margin-bottom: -8px;
+}
+#logo2{
+	width: 106px;
+    height: 10px;
+	font-weight: 200;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: -1px;
+	line-height: 0;
+	margin-top: 0px;
+	border-top: 1px solid;
+	padding-top: 8px;
 }
 nav#main-nav{
     position: fixed;
