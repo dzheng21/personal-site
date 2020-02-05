@@ -12,15 +12,6 @@
     <title>Derek N Zheng</title>
   </head>
   <body>
-    <!-- <nav>
-      <ul>
-        <li><a class="active" href="#">home</a></li>
-        <li><a href="html/about-me.html">about me</a></li>
-        <li><a href="html/contact.html">contact</a></li>
-        <li><a href="cool-navbars-master/index.html">link to swag</a></li>
-
-      </ul>
-    <nav> -->
 
     <div class="line"></div>
     <div class="line"></div>
@@ -46,21 +37,48 @@
                 <li><a class="active" href="#home">home</a></li>
                 <li><a href="#about-me">about me</a></li>
                 <li><a href="#contact">contact</a></li>
-                <li><a href="cool-navbars-master/index.html">base</a></li>
+<!--                 <li><a href="cool-navbars-master/index.html">base</a></li>
+ -->            <li><a href="#umbrella">night</a></li>
+
 
             </ul>
         </details>
     </nav>
 
-    <section id="home" data-target="home"> 
-      <div class="box" id="jellyfish-home" data-target="#jellyfish-home">
-          <h2>Jellyfish</h2>
-          <h3>Typically, medusozoan cnidarians have a pelagic, predatory jellyfish stage in their life cycle; staurozoans are the exceptions.
-          </h3>
+    <section id="home" data-target="#home" class="active"> 
+<!--       <nav class="cool-navbar umbrella">
+          <ul>
+              <li><a href="#home-welcome" class="active"><span class="active">Home</span> <div class="indicator"></div></a></li>
+              <li><a href="#home-about"><span>About</span> <div class="indicator"></div></a></li>
+              <li><a href="#home-more"><span>More Data</span> <div class="indicator"></div></a></li>
+          </ul>
+      </nav> -->
+
+      <div class="box" id="home-welcome" data-target="#">
+          <h2>welcome</h2>
+          <h4 style="font-size: 45px; letter-spacing: -4px;"> this site is currently under construction.
+          </h4>
       </div>
+
+      <div class="box" id="#home-welcome" data-target="#home-welcome">
+          <h2>a</h2>
+          <h3></h3>
+      </div>
+      <div class="box" id="#home-about" data-target="#home-about">
+          <h2>b</h2>
+          <p></p>
+      </div>
+      <div class="box" id="#home-more" data-target="#home-species">
+          <h2>c</h2>
+          <p></p>
+      </div>
+<!--       <div class="box" id="jellyfish-more-data" data-target="#jellyfish-more-data">
+          <h2>d</h2>
+          <p> z nuts</p>
+      </div> -->
     </section>
 
-    <section id="about-me" data-target="about-me"> 
+    <section id="about-me" data-target="#about-me"> 
       <h2> about me
       </h2>
       <p> 
@@ -68,10 +86,43 @@
       </p>
     </section>
 
-    <section id="contact" data-target="contact">
+    <section id="contact" data-target="#contact">
       <h2> contact
       </h2>
       <p> adlskj </p>
+    </section>
+
+    <section id="umbrella" data-tab="#umbrella">
+<!--             <nav class="cool-navbar umbrella">
+              <ul>
+                  <li><a href="#umbrella-home" class="active"><span>Home</span> <div class="indicator"></div></a></li>
+                  <li><a href="#umbrella-about"><span>About</span> <div class="indicator"></div></a></li>
+                  <li><a href="#umbrella-categories"><span>Categories</span> <div class="indicator"></div></a></li>
+                  <li><a href="#umbrella-more-data"><span>More Data</span> <div class="indicator"></div></a></li>
+              </ul>
+          </nav> -->
+      <div class="box" id="umbrella-home" data-target="#umbrella-home">
+          <h2>welcome</h2>
+          <h3>this site is currently under construction</h3>
+      </div>
+      <div class="box" id="umbrella-about" data-target="#umbrella-about">
+  <!--                 <h4>About</h4>
+          <p>
+              It is designed to protect a person against rain or sunlight. Umbrellas and parasols are primarily hand-held portable devices sized for personal use. The largest hand-portable umbrellas are golf umbrellas. Umbrellas are now a consumer product with a large global market.
+          </p> -->
+      </div>
+      <div class="box" id="umbrella-categories" data-target="#umbrella-categories">
+  <!--                 <h4>Categories</h4>
+          <p>
+              Umbrellas can be divided into two categories: fully collapsible umbrellas, in which the metal pole supporting the canopy retracts, making the umbrella small enough to fit in a handbag; and non-collapsible umbrellas, in which the support pole cannot retract and only the canopy can be collapsed.
+          </p> -->
+      </div>
+      <div class="box" id="umbrella-more-data" data-target="#umbrella-more-data">
+  <!--                 <h4>More Data</h4>
+          <p>
+              Umbrellas continue to be actively developed. In the US, so many umbrella-related patents are being filed that the U.S. Patent Office employs four full-time examiners to assess them. As of 2008, the office registered 3000 active patents on umbrella-related inventions.
+          </p> -->
+      </div>
     </section>
 
 
@@ -102,6 +153,7 @@
         </ul>
       </details>
     </nav> -->
-
+        <script src="cool-navbars-master/js/scrollspy.min.js"></script>
+        <script src="cool-navbars-master/js/tabs.js"></script>
   </body>
 </html>

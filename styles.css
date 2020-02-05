@@ -95,8 +95,8 @@ body, html{
     position: relative;
     height: 100%;
     margin: 0;
-    color: #fff;
-    scroll-behavior: smooth;
+/*    color: #fff;
+*/    scroll-behavior: smooth;
 }
 a{
     color: #fff;
@@ -288,6 +288,13 @@ details summary:hover .closed .bar:nth-of-type(3){
     margin-left: 80%;
 }
 
+#home {
+	background: url('images/beach.jpg') center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 /*  main structure */
 section{
     display: none;
@@ -330,4 +337,76 @@ section p{
     font-weight: 300;
     line-height: 2.2;
     text-align: justify;
+}
+
+nav.cool-navbar{
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+    text-align: right;
+}
+
+nav.umbrella ul li a{
+    display: inline-block;
+    font-size: 12.5px;
+    padding: 0 10px;
+    -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+}
+nav.umbrella ul li{
+    line-height: 0;
+}
+nav.umbrella ul li a span{
+    display: none;
+    margin-right: 15px;
+    top: -10px;
+    position: relative;
+}
+nav.umbrella ul li a.active span{
+    display: inline-block;
+    top: -4px;
+    margin-right: 2px;
+}
+nav.umbrella ul li a .indicator{
+    width: 1px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    position: relative;
+}
+nav.umbrella ul li a:hover .indicator{
+    background: #fff;
+}
+nav.umbrella ul li a.active .indicator{
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 1px solid #fff;
+    right: -6.5px;
+    border-radius: 50%;
+}
+nav.umbrella ul li a:hover span{
+    display: inline-block;
+}
+@media (max-width: 768px) {
+    nav.cool-navbar{
+        right: 2px;
+        bottom: 12px;
+        z-index: 11;
+    }
+    nav.cool-navbar ul li a.active span{
+        display: none;
+    }
+    nav.cool-navbar ul li a:hover span{
+        display: none;
+    }
+}
+
+#umbrella {
+	background: url('images/road-timelapse.jpg') center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
