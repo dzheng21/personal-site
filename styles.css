@@ -410,3 +410,17 @@ nav.umbrella ul li a:hover span{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+
+#about-me {
+	background: url('images/beach.jpg') center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#contact {
+	background: url('images/road-timelapse.jpg') center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+}
