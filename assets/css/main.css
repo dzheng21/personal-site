@@ -7,7 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/*2e3842 */
+/*2e3842 95b5df*/
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2089,6 +2089,14 @@ input, select, textarea {
 		.icon.style3 {
 			color: #76ddff;
 		}
+	
+	.icon.mh:before {
+		background-image: url("../images/makeharvard.png");
+	}
+
+	.icon.mh-alt:before {
+		background-image: url("../images/makeharvard.png");
+	}
 
 /* Image */
 
