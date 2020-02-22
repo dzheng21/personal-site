@@ -3469,7 +3469,7 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
 		background: #000000;
-		opacity: 40%;
+		/* opacity: 40%; */
 		height: 3em;
 		left: 0;
 		line-height: 3em;
