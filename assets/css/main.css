@@ -2090,13 +2090,26 @@ input, select, textarea {
 			color: #76ddff;
 		}
 	
-	.icon.mh:before {
-		background-image: url("../images/makeharvard.png");
+	/* .icon.mh::before {
+		content: " ";
+		display: block;
+		background-image: url("../../images/makeharvard.png");
 	}
 
-	.icon.mh-alt:before {
-		background-image: url("../images/makeharvard.png");
+	.icon.mh-alt::before {
+		content: url("../../images/makeharvard.png");
+		background-image: url("../../images/makeharvard.png");
 	}
+
+.mh::before{
+	content: " heleeooaofd";
+	display: block;
+	background-image: url("../../images/makeharvard.png");
+}
+
+.mh-alt::before{
+	content:url("../../images/makeharvard.png");
+} */
 
 /* Image */
 
