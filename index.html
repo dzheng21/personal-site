@@ -20,55 +20,152 @@ for dereknzheng.com
     
 
     <style>
-        .logo{
+        .banner {
             font-family: 'Inter UI', sans-serif;
             font-weight: bold;
-            width: 1%;
-            height: 5%;
-            /* border: 0;
-            border-bottom: 5px solid;
-            border-top: 5px solid;
-            padding: 10px; */
-            /* padding-top: 15px; */
-            vertical-align: middle;
-            text-align: middle;
-            line-height: 1;
-            /* padding: 1px 5px 5px 0; */
-            font-weight: 600;
-            -webkit-text-stroke: 1px white;
-            color: transparent;
-            font-size: 200%;
-            letter-spacing: -4px;
-            /* z-index: 1; */
-            /* margin-bottom: -8px; */
-        }
-        /* #logo2{
-            width: 106px;
-            height: 10px;
-            font-weight: 200;
-            color: white;
-            font-size: 18px;
-            text-align: center;
-            letter-spacing: -1px;
-            line-height: 0;
-            margin-top: 0px;
-            border-top: 1px solid;
-            padding-top: 8px;
-        } */
-        .xxx {
-            font-family: 'Inter UI', sans-serif;
-            font-weight: bold;
-            /* color: transparent;
-            -webkit-text-stroke: 1px white; */
-            font-size: 145%;
-            letter-spacing: -3px;
+            font-size: 1.5em;
+            letter-spacing: -0.05em;
         }
         .lbai {
-            background: url('images/beach.jpg') center;
+            background: url('images/snaps/pool.jpg') center;
             background-size: 100%;
             background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
+			background-attachment: fixed;
+		}
+		#cf {
+			position:relative;
+			height:281px;
+			width:450px;
+			margin:0 auto;
+		}
+
+		/* #cf img {
+			position:absolute;
+			left:0;
+			-webkit-transition: opacity 1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+		}
+		@keyframes cf3FadeInOut {
+			0% {
+			opacity:1;
+			}
+			45% {
+			opacity:1;
+			}
+			55% {
+			opacity:0;
+			}
+			100% {
+			opacity:0;
+			}
+		}
+
+		#cf3 img.top {
+			animation-name: cf3FadeInOut;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			animation-duration: 5s;
+			animation-direction: alternate;
+		} */
+
+		@-webkit-keyframes cf3FadeInOut {
+			0% {
+				opacity:1;
+			}
+			25% {
+				opacity:1;
+			}
+			75% {
+				opacity:0;
+			}
+			100% {
+			opacity:0;
+			}
+			}
+
+			@-moz-keyframes cf3FadeInOut {
+			0% {
+			opacity:1;
+			}
+			25% {
+			opacity:1;
+			}
+			75% {
+			opacity:0;
+			}
+			100% {
+			opacity:0;
+			}
+			}
+
+			@-o-keyframes cf3FadeInOut {
+			0% {
+			opacity:1;
+			}
+			25% {
+			opacity:1;
+			}
+			75% {
+			opacity:0;
+			}
+			100% {
+			opacity:0;
+			}
+			}
+
+			@keyframes cf3FadeInOut {
+			0% {
+			opacity:1;
+			}
+			25% {
+			opacity:1;
+			}
+			75% {
+			opacity:0;
+			}
+			100% {
+			opacity:0;
+			}
+			}
+
+			#cf3 {
+			position:relative;
+			height:281px;
+			width:450px;
+			margin:0 auto;
+			}
+			#cf3 img {
+			position:absolute;
+			left:0;
+			}
+
+			#cf3 img.top {
+			-webkit-animation-name: cf3FadeInOut;
+			-webkit-animation-timing-function: ease-in-out;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-duration: 4s;
+			-webkit-animation-direction: alternate;
+
+			-moz-animation-name: cf3FadeInOut;
+			-moz-animation-timing-function: ease-in-out;
+			-moz-animation-iteration-count: infinite;
+			-moz-animation-duration: 4s;
+			-moz-animation-direction: alternate;
+
+			-o-animation-name: cf3FadeInOut;
+			-o-animation-timing-function: ease-in-out;
+			-o-animation-iteration-count: infinite;
+			-o-animation-duration: 4s;
+			-o-animation-direction: alternate;
+
+			animation-name: cf3FadeInOut;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			animation-duration: 4s;
+			animation-direction: alternate;
+			}
     </style>
 
 	<body class="landing is-preload">
@@ -78,14 +175,18 @@ for dereknzheng.com
 
 				<!-- Header -->
 					<header id="header">
-                        <h1><a class = "logo" href="index.html">DNZ</a></h1>
+						<h1><a href="index.html">
+							<div id="cf3">
+								<img style="width: 6.3em;" class="bottom" src="images/logo-red.png" />
+
+								<img style="width: 6.3em;" class="top" src="images/logo-blue.png" />
+							  </div>
+						</a>   </h1>
 						<nav id="nav">
 							<ul>
-                                <!-- <li class = "id">
-                                    <a href=""> <div class="logo"> <span>DNZ</span> </div> <div id="logo2">derek zheng</div> </a>
-                                </li> -->
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span></span></a>
+									
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
@@ -103,12 +204,9 @@ for dereknzheng.com
 				<!-- Banner -->
 					<section id="banner">
                             <div class="inner">
-                                <h2><div> <span class= "xxx">Derek Zheng</span> </div></h2>
+                                <h2><div> <span class= "banner">Derek Zheng</span> </div></h2>
                                 <p>Welcome
                                 </p>
-                                <!-- <ul class="actions special">
-                                    <li><a href="#" class="button primary">Activate</a></li>
-                                </ul> -->
                             </div>
                             <a href="#one" class="more scrolly">Learn More</a>
 					</section>
@@ -116,7 +214,6 @@ for dereknzheng.com
 				<!-- One -->
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
-							
 							<header class="major">
 								<h2>Hey there! My Name is Derek.
 								   </h2>
@@ -154,7 +251,7 @@ for dereknzheng.com
 								<h2> Athlete<br />
 								</h2>
                                 <p> Football + Track & Field, <br>
-                                but I've tried (and miserably failed) at many more.</p>
+                                but I've tried (and failed) at many more.</p>
                             </div>
 						</section>
 					</section>
@@ -217,6 +314,19 @@ for dereknzheng.com
 						</div>
 					</section>
 
+					<section id="four" class="wrapper style3 special">
+						<header class="major"><h2>photography</h2><p>because...why not?</p></header>
+						<div class="inner">
+							<img style="width:15em;" class="bottom" src="images/snaps/cafe.JPG" />
+							<img style="width:15em;" class="top" src="images/snaps/flowers.jpg" />
+							<img style="width:15em;" class="top" src="images/snaps/pool.jpg" />
+							<img style="width:15em;" class="top" src="images/snaps/wave-crash.jpeg" />
+							<img style="width:15em;" class="top" src="images/snaps/white-flower.jpeg" />
+						</div>
+					</section>
+
+
+
 				<!-- CTA -->
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
@@ -242,7 +352,7 @@ for dereknzheng.com
                             
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Derek Zheng</li><li> photo creds: <a href="https://unsplash.com/">Unsplash</a> credit to HTML5UP</li>
+							<li>&copy; Derek Zheng</li><li> credit to HTML5UP</li>
 						</ul>
 					</footer>
 
