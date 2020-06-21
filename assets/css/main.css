@@ -88,7 +88,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #000000;
+		background: #000917;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2089,27 +2089,6 @@ input, select, textarea {
 		.icon.style3 {
 			color: #76ddff;
 		}
-	
-	/* .icon.mh::before {
-		content: " ";
-		display: block;
-		background-image: url("../../images/makeharvard.png");
-	}
-
-	.icon.mh-alt::before {
-		content: url("../../images/makeharvard.png");
-		background-image: url("../../images/makeharvard.png");
-	}
-
-.mh::before{
-	content: " heleeooaofd";
-	display: block;
-	background-image: url("../../images/makeharvard.png");
-}
-
-.mh-alt::before{
-	content:url("../../images/makeharvard.png");
-} */
 
 /* Image */
 
@@ -2839,7 +2818,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #A51C30;
+			background-color: #087CA7;
 			color: #c8ece9;
 		}
 
@@ -2998,11 +2977,11 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background-color: #A51C30;
+			background-color: #087CA7;
 		}
 
 		.wrapper.style3 {
-			background-color: #072F5F;
+			background-color: #094074;
 			color: #d3d4e4;
 		}
 
@@ -3165,16 +3144,16 @@ input, select, textarea {
 		}
 
 		.wrapper.style5 {
-			background-color: #ffffff;
-			color: #4E4852;
+			background-color: #002766;
+			color: #ffffff;
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
-				color: #2E3842;
+				color: #ffffff;
 			}
 
 			.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
-				color: #2E3842;
+				color: #ffffff;
 			}
 
 			.wrapper.style5 hr {
@@ -3202,7 +3181,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style5 label {
-				color: #2E3842;
+				color: #ffffff;
 			}
 
 			.wrapper.style5 input[type="text"],
@@ -3296,7 +3275,7 @@ input, select, textarea {
 			.wrapper.style5 button,
 			.wrapper.style5 .button {
 				box-shadow: inset 0 0 0 2px #dfdfdf;
-				color: #2E3842;
+				color: #ffffff;
 			}
 
 				.wrapper.style5 input[type="submit"]:hover,
@@ -3373,8 +3352,8 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #A51C30;
-		opacity: 95%;
+		background: #293544;
+		opacity: 96%;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3468,7 +3447,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #000000;
+		background: #000917;
 		/* opacity: 40%; */
 		height: 3em;
 		left: 0;
@@ -3718,7 +3697,7 @@ input, select, textarea {
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
-			background: #000000;
+			background: #000917;
 			display: block;
 			width: 100%;
 			height: 100%;
