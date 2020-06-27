@@ -1,11 +1,36 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@import url('https://rsms.me/inter/inter.css');
+@import url(//db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold);
 
 /*
 	Spectral by HTML5 UP
 	edited by Derek Zheng -> for dereknzheng.com
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+
+@font-face {
+    font-family: 'Gilroy ExtraBold';
+    src: url('../webfonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('../webfonts/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+	font-family: 'Gilroy Black';
+	src: url('../webfonts/Gilroy-Black.ttf') format('truetype'); 
+	font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+	font-family: 'Gilroy Light';
+	src: url('../webfonts/Gilroy-Light.otf') format('opentype'); 
+	font-weight: normal;
+    font-style: normal;
+}
 
 /*2e3842 95b5df*/
 html, body, div, span, applet, object,
@@ -102,12 +127,13 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+
 	body, input, select, textarea {
 		color: #fff;
-		font-family: "Open Sans", Helvetica, sans-serif;
-		font-size: 15pt;
-		font-weight: 400;
-		letter-spacing: 0.075em;
+		font-family: "Gilroy Light", sans-serif;
+		font-size: 17pt;
+		font-weight: normal;
+		letter-spacing: 0em;
 		line-height: 1.65em;
 	}
 
@@ -165,9 +191,11 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
-		font-weight: 800;
-		letter-spacing: 0.225em;
-		line-height: 1em;
+		font-family: "Gilroy ExtraBold";
+		font-weight: 900;
+		font-size: 1.5em;
+		/* letter-spacing: 0.1em; */
+		line-height: 0em;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
 	}
@@ -178,8 +206,8 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.35em;
-		line-height: 1.75em;
+		font-size: 2.35em;
+		line-height: 1.25em;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -192,7 +220,7 @@ input, select, textarea {
 		}
 
 	h3 {
-		font-size: 1.15em;
+		font-size: 1.65em;
 		line-height: 1.75em;
 	}
 
@@ -3599,7 +3627,8 @@ input, select, textarea {
 			display: inline-block;
 			font-size: 1.75em;
 			opacity: 1;
-			padding: 0.35em 1em;
+			padding: 0.2em 0.4em;
+			line-height: normal;
 			position: relative;
 			z-index: 1;
 		}
@@ -3681,7 +3710,7 @@ input, select, textarea {
 				display: block;
 				height: 1.5em;
 				left: 50%;
-				margin: 0 0 0 -0.75em;
+				margin: 0 0 0 0;
 				position: absolute;
 				width: 1.5em;
 			}
@@ -3710,7 +3739,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 7em 3em 5em 3em ;
+				padding: 5em 3em 5em 3em ;
 				height: auto;
 				min-height: 0;
 			}
