@@ -1,7 +1,5 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
-@import url('https://rsms.me/inter/inter.css');
-@import url(//db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold);
 
 /*
 	Spectral by HTML5 UP
@@ -3645,7 +3643,7 @@ input, select, textarea {
 				background: #fff;
 				content: '';
 				display: block;
-				height: 2px;
+				height: .1rem;
 				position: absolute;
 				width: 100%;
 			}
