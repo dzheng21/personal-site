@@ -1,336 +1,851 @@
 <!DOCTYPE HTML>
-<!--
-Author: Derek Zheng
-for dereknzheng.com
--->
-
 <html>
 	<head>
-		<title> Derek Zheng </title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-		<link rel="manifest" href="favicon/site.webmanifest">
-    </head>
-    
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Derek Zheng</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-    <style>
-        .banner {
-            font-family: 'Gilroy ExtraBold', sans-serif;
-            font-weight: normal;
-			font-size: 1.75em;
-			-webkit-text-stroke: .1rem white;
-			color: transparent;
-        }
-        .lbai {
-            background: url('images/snaps/pool.jpg') center;
-            background-size: 100%;
-            background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-		#cf {
-			position:relative;
-			height:281px;
-			width:450px;
-			margin:0 auto;
-		}
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-		@-webkit-keyframes cf3FadeInOut {
-			0% {
-				opacity:1;
-			}
-			25% {
-				opacity:1;
-			}
-			75% {
-				opacity:0;
-			}
-			100% {
-			opacity:0;
-			}
-			}
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-			@-moz-keyframes cf3FadeInOut {
-			0% {
-			opacity:1;
-			}
-			25% {
-			opacity:1;
-			}
-			75% {
-			opacity:0;
-			}
-			100% {
-			opacity:0;
-			}
-			}
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 
-			@-o-keyframes cf3FadeInOut {
-			0% {
-			opacity:1;
-			}
-			25% {
-			opacity:1;
-			}
-			75% {
-			opacity:0;
-			}
-			100% {
-			opacity:0;
-			}
-			}
+	<script src="https://kit.fontawesome.com/0fcf1c853e.js" crossorigin="anonymous"></script>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-			@keyframes cf3FadeInOut {
-			0% {
-			opacity:1;
-			}
-			25% {
-			opacity:1;
-			}
-			75% {
-			opacity:0;
-			}
-			100% {
-			opacity:0;
-			}
-			}
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-			#cf3 {
-			position:relative;
-			height:281px;
-			width:450px;
-			margin:0 auto;
-			}
-			#cf3 img {
-			position:absolute;
-			left:0;
-			}
+	</head>
+	<body>
 
-			#cf3 img.top {
-			-webkit-animation-name: cf3FadeInOut;
-			-webkit-animation-timing-function: ease-in-out;
-			-webkit-animation-iteration-count: infinite;
-			-webkit-animation-duration: 3.21s;
-			-webkit-animation-direction: alternate;
-
-			-moz-animation-name: cf3FadeInOut;
-			-moz-animation-timing-function: ease-in-out;
-			-moz-animation-iteration-count: infinite;
-			-moz-animation-duration: 4.21s;
-			-moz-animation-direction: alternate;
-
-			-o-animation-name: cf3FadeInOut;
-			-o-animation-timing-function: ease-in-out;
-			-o-animation-iteration-count: infinite;
-			-o-animation-duration: 4.21s;
-			-o-animation-direction: alternate;
-
-			animation-name: cf3FadeInOut;
-			animation-timing-function: ease-in-out;
-			animation-iteration-count: infinite;
-			animation-duration: 4.21s;
-			animation-direction: alternate;
-			}
-    </style>
-
-	<body class="landing is-preload">
-
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
-
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">
-							<!-- <image src="images/name.png"/> -->
-							<div id="cf3">
-								<img style="width: 3.21em;" class="bottom" src="images/logo-red.png" />
-								<img style="width: 3.21em;" class="top" src="images/logo-blue.png" />
-							  </div>
-							</a>   
-						</h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span></span></a>
-									
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="html/about_me.html">About Me</a></li>
-											<li><a href="html/contact.html">Contact</a></li>
-											<!-- <li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li> -->
-										</ul>
-									</div>
-                                </li>
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Banner -->
-					<section id="banner">
-                            <div class="inner">
-                                <h2><span class="banner">derek zheng</span></h2>
-                                <p>Welcome
-                                </p>
-                            </div>
-                            <a href="#one" class="more scrolly">Learn More</a>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-								<h1>Hey there! I'm Derek.</h1>
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight"> <div style = "width:80px;"></div>
-							<div class="image" style = "width: 20%;"><img src="images/features1.jpeg" alt="" /></div><div class="content">
-								<h2>Student</h2>
-                                <p>I'm an undergrad at Harvard College concentrating <br>
-                                    in Computer Science with a secondary in Economics. <br>
-                                    I'm also interested in Business and Product Management.</p>
-                            </div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/features2.JPG" alt="" /></div><div class="content">
-								<h2> Software Engineer <br />
-								</h2>
-								<p> I love building cool things that matter! <br>
-                                    Experience with Full Stack web development and systems programming.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/features3.png" alt="" /></div><div class="content">
-								<h2> Athlete<br />
-								</h2>
-                                <p> Football + Track & Field, <br>
-                                but I've tried many more.</p>
-                            </div>
-						</section>
-					</section>
-
-				<!-- Three --> 
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2> what I do </h2>
-								<p> i have a passion for learning and applying<br />
-                                  my knowledge to fix complex, meaningful problems<br>
-                                  that make the world a <b>better place </b><br>
-                                  <p1 style="font-size: 10px;">as I think all people should...</p1>
-                                </p>
-                                
-							</header>
-							<ul class="features ">
-								<li class="icon solid fa-code">
-									<h3> Programming </h3>
-                                    <p> Systems, UI/UX, Fullstack, Big Data, iOS, you name it! <br/><br>
-                                    C++, Python, Java, HTML/CSS, Node/React, Stata/R, SQL...</p>
-                                </li>
-                                <li class="icon solid fa-laptop">
-									<h3><a href="https://www.pakira.com/">Pakira</a></h3>
-                                    <p> founding software engineer at a startup modernizing
-                                    physical commodities trading, with an emphasis on sustainability, 
-                                    accountability, and accessibility. ask me more!</p>
-								</li>
-								<li class="icon solid fa-comment-dollar">
-									<h3> <a href="https://www.harvardcbe.com/">Harvard CBE </a></h3>
-                                    <h6> associate, harvard consulting on business and the environment. </h6>
-                                    <p> we work with fortune 500 companies and nonprofits while championing sustainability
-                                        initiatives.
-                                    </p>
-								</li>
-								<li class="icon fa-lightbulb">
-									<h3> <a href="http://www.harvardea.org/">Harvard Effective Altruism</a></h3>
-                                    <p> a common-sense organization
-                                    that asks how we can do better. simple. <br>
-                                    great community of passionate, driven leaders, too.
-                                    </p>
-                                </li> 
-
-								<li class="icon solid fa-tools"> 
-                                    <!-- <img src="images/makeharvard.png" align: center; width = 45px; alt=""/> -->
-									<h3> <a href="https://www.makeharvard.io/">MakeHarvard</a></h3> 
-                                    <p> finance executive board member for MakeHarvard, one of the largest
-                                        make-a-thons (think hackathon, but for engineers). we host 300+ competitors 
-                                        every year in february.
-                                    </p>
-								</li>
-								<li class="icon solid fa-football-ball">
-									<h3>Club Football</h3>
-									<p>avid belichick admirer, (retired) wr/db who has, for some reason, also
-                                        played olb, rb, te, de, qb and ss.
-                                    </p>
-								</li>
-								
-							</ul>
-						</div>
-					</section>
-
-					<section id="four" class="wrapper style4 special">
-						<header class="major"><h2>photography</h2><p>because...why not?</p></header>
-						<div class="inner">
-							<img style="width:15em;" src="images/snaps/cafe.JPG" />
-							<img style="width:15em;" src="images/snaps/flowers.jpg" />
-							<img style="width:15em;" src="images/snaps/waltdisney.jpeg" />
-							<img style="width:15em;" src="images/snaps/wave-crash.jpeg" />
-							<img style="width:15em;" src="images/snaps/tidepool.jpeg" />
-							<img style="width:15em;" src="images/snaps/birds.jpg" />
-							<img style="width:15em;" src="images/snaps/guomin.jpeg" />
-							<img style="width:15em;" src="images/snaps/mirror.jpeg" />
-							<img style="width:15em;" src="images/snaps/coastline.jpeg" />
-
-						</div>
-					</section>
-
-
-
-				<!-- CTA -->
-					<section id="cta" class="wrapper style5">
-						<div class="inner">
-							<header>
-								<h2> Let's Talk!</h2>
-								<p> I'm happy to talk about everything and anything—feel free to shoot me an email, or direct message me</p>
-							</header>
-							<ul class="actions stacked">
-								<li><a href="html/contact.html" class="button fit primary"> Contact </a></li>
-								<li><a href="html/about_me.html" class="button fit"> Resume </a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="https://github.com/dzheng21" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                            <li><a href="https://www.facebook.com/dnzheng" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                            <li><a href="mailto:derek_zheng@college.harvard.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                            <li><a href="https://www.linkedin.com/in/dereknzheng/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                            
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Derek Zheng</li><li> credit to HTML5UP</li>
-						</ul>
-					</footer>
-
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">dnz</a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">Derek Zheng</a></h1>
+				<span class="position">Computer Science at Harvard</span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#about" data-nav-section="about">About</a></li>
+						<!-- <li><a href="#" data-nav-section="services">Services</a></li> -->
+						<!-- <li><a href="#" data-nav-section="skills">Skills</a></li> -->
+						<li><a href="#education" data-nav-section="education">Education</a></li>
+						<li><a href="#experience" data-nav-section="experience">Experience</a></li>
+						<li><a href="#projects" data-nav-section="projects">Projects</a></li>
+						<li><a href="#resume" data-nav-section="resume">Resume</a></li>
+						<!-- <li><a href="#" data-nav-section="blog">Blog</a></li> -->
+						<li><a href="#contact" data-nav-section="contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="colorlib-footer">
+				<ul>
+					<li><a href="https://www.facebook.com/dnzheng"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="mailto:derek_zheng@college.harvard.edu"><i class="fas fa-envelope"></i></a></li>
+					<li><a href="https://github.com/dzheng21"><i class="fab fa-github"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/dereknzheng/"><i class="fab fa-linkedin"></i></a></li>
+				</ul>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		</aside>
+
+		<section style="background-image: url(images/img_bg_1.jpg); background-size:cover; height: 20em;" class="colorlib-about" data-section="home">
+		</section>
+
+		<div id="colorlib-main">
+			<!-- <section id="colorlib-hero" class="" data-section="home">
+				<div class="flexslider">
+					<ul class="slides">
+				   	<li style="background-image: url(images/img_bg_1.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			 <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 slider-text">
+					   				 <div class="slider-text-inner">
+					   					 <div class="desc">
+						   					<h1>Hi! <br>I'm Jackson</h1>
+						   					<h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
+												<p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+											</div>
+					   				</div> 
+					   			</div>
+					   		</div> 
+				   		</div>
+				   	</li>
+				   	<li style="background-image: url(images/img_bg_2.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1>I am <br>a Designer</h1>
+												<h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
+												<p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section> -->
+
+
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta"> <hr width="21px" align="left"></span>
+										<h2 class="colorlib-heading">About</h2>
+										<p><strong>Hey! I'm Derek Zheng,</strong> a student at Harvard University concentrating/majoring in Computer Science with a secondary in Economics
+											or Environmental Science & Public Policy. </p>
+										<p> My interests lie at the intersection of technology, sustainability, entrepreneurship and business development. 
+											I'm incredibly curious and love to solve interesting problems, particularly those that impact the lives others. 
+											I'm passionate about innovative impact technologies, am a fan of Effective Altruism. In my free time, I'm an avid New England Patriots fan, military documentary geek and enjoy listening to hip hop and R&B music and 
+											exploring new restaurants. 
+										</p>
+										<p> <strong> Learn more below! </strong></p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+										<span class="icon2"><i class="icon-data"></i></span>
+										<h3>Software Engineering</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<span class="icon2"><i class="icon-globe-outline"></i></span>
+										<h3>Research & Consulting</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<span class="icon2"><i class="icon-bulb"></i></span>
+										<h3>Product Management</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<span class="icon2"><i class="icon-phone3"></i></span>
+										<h3>Product Design & UX</h3>
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			
+			<!-- <section class="colorlib-services" data-section="services">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">What I do?</span>
+							<h2 class="colorlib-heading">Here are some of my expertise</h2>
+						</div>
+					</div>
+					<div class="row row-pt-md">
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-1">
+								<span class="icon">
+									<i class="icon-bulb"></i>
+								</span>
+								<div class="desc">
+									<h3>Innovative Ideas</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-2">
+								<span class="icon">
+									<i class="icon-data"></i>
+								</span>
+								<div class="desc">
+									<h3>Software</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-3">
+								<span class="icon">
+									<i class="icon-phone3"></i>
+								</span>
+								<div class="desc">
+									<h3>Application</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-4">
+								<span class="icon">
+									<i class="icon-layers2"></i>
+								</span>
+								<div class="desc">
+									<h3>Graphic Design</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-5">
+								<span class="icon">
+									<i class="icon-data"></i>
+								</span>
+								<div class="desc">
+									<h3>Software</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-6">
+								<span class="icon">
+									<i class="icon-phone3"></i>
+								</span>
+								<div class="desc">
+									<h3>Application</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			
+			<!-- <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row">
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="309" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Cups of coffee</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="356" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Projects</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Clients</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Partners</span>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<!-- <section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta"> <hr width="21px" align="left"> </span>
+							<h2 class="colorlib-heading animate-box">My Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<p>Some things I know how to do:</p>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Photoshop</h3>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>jQuery</h3>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>HTML5</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+								    <span>85%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>CSS3</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>WordPress</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+								    <span>70%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>SEO</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>						
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>WordPress</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+								    <span>70%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>SEO</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section> -->
+
+			<section class="colorlib-education" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<hr width="21px" align="left">
+							<h2 class="colorlib-heading animate-box">Education</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Harvard College
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									         <div class="panel-body">
+												 <i>Cambridge, MA, USA</i>
+										      		<p> Currently pursuing an <strong> A.B. in Computer Science </strong>  with a secondary in Economics/Environmental Science & Public Policy at Harvard College. </p>
+													<p><i>Activites & Societies:</i></p>
+													<ul>
+														<li> Research Assistant, Harvard Kennedy School </li>
+														<li> Director of Engagement, HCS Tech for Social Good </li>
+														<li> Associate, Harvard Consulting on Business and the Environment  </li>
+														<li> Projects and Events Co-Chair, Harvard Effective Altruism </li>
+														<li> Finance Executive Board, MakeHarvard </li>
+														<li> Harvard Computer Society (HCS)  </li>
+														<li> Harvard Radcliffe Chinese Students Association (HRCSA)  </li>
+														<li> High School Heisman Scholar </li>
+													</ul>
+									         </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingTwo">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Tsinghua University
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									        <div class="panel-body">
+												<i>Beijing, China</i>
+
+									            <p> Selected for a prestigious full scholarship under the Tsinghua Experiencing China Program, in the Environment Track. 
+													Engaged in a month-long Environmental Science course, conducting field and laboratory visits and compiling a carbon pricing model public 
+													policy paper. 
+												</p>
+									        </div>
+									    </div>
+									</div>
+
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFour">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> Monta Vista High School
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+									        <div class="panel-body">
+												<i>Cupertino, CA, USA</i>
+												<p>I graduated from Monta Vista High School in the Class of 2019</p> 
+
+												<p><i>Activites & Societies:</i></p>
+												<ul>
+													<li> Associated Student Body President </li>
+													<li> Founder, Monta Vista Official App Club </li>
+													<li> Class President (x2), Class Treasurer (x1) </li>
+													<li> Varsity Football (x3) </li>
+													<li> Varsity Track & Field (x4) </li>
+													<li> USA Computing Olympiad, Gold Level </li>
+													<li> Intermediate Multivariate Calculus, West Valley </li>
+												</ul>
+
+									        </div>
+									    </div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<hr width="21px" align="left">
+							<h2 class="colorlib-heading animate-box"> Technical Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2> Software Engineer & Technical Product Manager / <a href="https://forum.pakira.com/">Pakira, Inc.</a> <span> January 2020 - Current</span></h2>
+					                  <p> </p>
+					               </div>
+					            </div>
+							 </article>
+							 
+							 <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-4">
+					                  <i class="icon-pen2"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2> AI Research Fellow / <a href="https://www.r42group.com/r42institute"> R42 Institute </a> <span> September 2020 - Current</span></h2>
+					                  <p> </p>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-2">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2>Software Engineering Intern / <a href="https://echosearch.org/"> Boston Housing Authority</a> <span> March 2020 - June 2020</span></h2>
+					                  <p> </p>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-3">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2> Product Management & UX Intern /<a href="https://getjoyfood.com/"> Joy Food Company</a><span> June 2020 - July 2020</span></h2>
+					                  <p></p>
+					               </div>
+					            </div>
+							 </article>
+
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					               </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>
+
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<hr width="21px" align="left">
+							<h2 class="colorlib-heading animate-box"> Other Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-3">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2> Investment Intern / <a href="https://www.clearvisionventures.com/"> ClearVision Ventures </a> <span> June 2020 - Current</span></h2>
+					                  <p></p>
+					               </div>
+					            </div>
+					         </article>
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2> Research Assistant / <a href="#"> Harvard Kennedy School </a> <span> June 2020 - Current</span></h2>
+					                  <p></p>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-5">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2>Associate / <a href="#"> Harvard Consulting on Business and the Environment</a> <span> Feb 2020 - Current</span></h2>
+					                  <p></p>
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					               </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>
+
+			<!-- <section class="colorlib-work" data-section="projects">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<hr width="21px" align="left">
+							<h2 class="colorlib-heading animate-box">Select Projects</h2>
+						</div>
+					</div>
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-12">
+							<p>Some cool things I'm currently working on:</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/img-1.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Monta Vista Official App</a></h3>
+										Designed and made a working app. 
+										<span> <a href="https://apps.apple.com/us/app/monta-vista-official/id1444934579"> iOS Mobile Application</a></span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/img-2.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 02</a></h3>
+										<span>Animation</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/img-3.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 03</a></h3>
+										<span>Illustration</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+							<div class="project" style="background-image: url(images/img-4.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 04</a></h3>
+										<span>Application</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/img-5.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 05</a></h3>
+										<span>Graphic, Logo</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/img-6.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 06</a></h3>
+										<span>Web Design</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+			<!-- <section class="colorlib-blog" data-section="blog">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Read</span>
+							<h2 class="colorlib-heading">Recent Blog</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Renovating National Gallery</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Make website from scratch</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+			<section class="colorlib-main" data-section="resume">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<hr width="21px" align="left">
+							<h2 class="colorlib-heading">Resume</h2>
+						</div>
+					</div>
+					<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="colorlib-icon">
+							<a href = "Derek Zheng Resume.pdf"><i class="fas fa-file-alt"></i></a>
+						</div>
+						<div class="colorlib-text">
+							<p><a href = "Derek Zheng Resume.pdf">My Resume</a></p>
+						</div>
+					</div>
+				
+				</div>
+			</section>
+
+			<section class="colorlib-contact" data-section="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Get in Touch</span>
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-12">
+							<p> Feel free to email me or connect with me on a platform! Always happy to meet new people!</p>
+						</div>
+					</div>
+					
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="fas fa-envelope"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="mailto:derek_zheng@college.harvard.edu">derek_zheng@college.harvard.edu</a></p>
+								</div>
+							</div>
+				</div>
+				<div class="colorlib-narrow-content">
+					<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> </small></p>
+				</div>
+			</section>
+		</div><!-- end:colorlib-main -->
+
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
 
 	</body>
 </html>
+
